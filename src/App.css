@@ -1,0 +1,30 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+}
+
+.App-header {
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: calc(10px + 2vmin);
+    min-height: 20vh;
+    color: white;
+}
+
+.NavBar {
+    position: fixed;
+    width: 80%;
+}
+
+.NavItem {
+    width: 25%;
+}
+
+.App-link {
+    color: #09d3ac;
+}
