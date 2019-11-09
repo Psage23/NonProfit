@@ -1,15 +1,18 @@
 import React from 'react';
 import './App.css';
-import NavBar from "./componants/navbar"
+import TabPage from "./componants/Tabpage"
 
 
 function App() {
-    return ( 
-    <div className = "App" >
-        <header className = "App-header" >
-          <NavBar/>
-        </header>  
-    </div>
+    return ( <
+        div className = "App" >
+        <
+        header className = "App-header" >
+        <
+        TabPage / >
+        <
+        /header>   < /
+        div >
     );
 }
 
