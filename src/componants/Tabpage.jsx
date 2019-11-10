@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col } from 'reactstrap';
 import classnames from 'classnames';
 import PhotoGallery from "./gallery"
+import ContactPage from "./ContactPage"
 
 const TabPage = (props) => {
   const [activeTab, setActiveTab] = useState('1');
@@ -57,14 +58,7 @@ const TabPage = (props) => {
           </Row>
         </TabPane>
         <TabPane tabId="3">
-          <Row>
-            <Col sm="12">
-                <div>
-              <h1>Contact Us</h1>
-              <div data-embed-src="https://kontactr.com/form/8cd20fef31e2a40"></div><script src="https://d3vxmrleduyji.cloudfront.net/js/e.js"></script>
-              </div>
-            </Col>
-          </Row>
+        <ContactPage/>
         </TabPane>
         <TabPane tabId="4">
           <Row>

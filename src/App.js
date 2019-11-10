@@ -4,15 +4,14 @@ import TabPage from "./componants/Tabpage"
 
 
 function App() {
-    return ( <
-        div className = "App" >
+    return ( < div className = "App" >
         <
         header className = "App-header" >
         <
+        /header>    <
         TabPage / >
         <
-        /header>   < /
-        div >
+        /div>
     );
 }
 
