@@ -8,13 +8,10 @@ function App() {
         <
         header className = "App-header" >
         <
-        /header> <
-        body >
-        <
+        /header> <body > <
         TabPage / >
         <
-        /body> <
-        /div>
+        /body> </div >
     );
 }
 
