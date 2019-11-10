@@ -61,6 +61,7 @@ const PhotoGallery = (props) => {
   });
 
   return (
+      <div className="GalleryCarousel">
     <Carousel
       activeIndex={activeIndex}
       next={next}
@@ -71,6 +72,7 @@ const PhotoGallery = (props) => {
       <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
       <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
     </Carousel>
+    </div>
   );
 }
 

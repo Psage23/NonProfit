@@ -18,13 +18,13 @@ const TabPage = (props) => {
           <NavItem>
             <div className="NavBtns">
           <NavLink className={classnames({ active: activeTab === '1' })}
-            onClick={() => { toggle('1'); }}>Home</NavLink></div>
+            onClick={() => { toggle('1'); }}><span>☖</span>Home</NavLink></div>
         </NavItem>
         <NavItem>
         <div className="NavBtns">
           <NavLink
             className={classnames({ active: activeTab === '2' })}
-            onClick={() => { toggle('2'); }}> Photo Gallery
+            onClick={() => { toggle('2'); }}><span>☑</span> Photo Gallery
           </NavLink></div>
         </NavItem>
         <NavItem>
@@ -32,14 +32,14 @@ const TabPage = (props) => {
           <NavLink
             className={classnames({ active: activeTab === '3' })}
             onClick={() => { toggle('3'); }}
-          > Contact Us
+          > <span>☏</span>Contact Us
           </NavLink></div>
         </NavItem>
         <NavItem>
         <div className="NavBtns">
           <NavLink
             className={classnames({ active: activeTab === '4' })}
-            onClick={() => { toggle('4'); }}> Donate</NavLink></div>
+            onClick={() => { toggle('4'); }}><span>☺</span>Donate</NavLink></div>
         </NavItem>
          </Nav>
          </div>
@@ -89,7 +89,7 @@ const TabPage = (props) => {
         </TabPane>
       </TabContent>
       <div className="PageFooter">
-          <p className="FooterText">Copyright 2019 Poly Praise AZ </p>
+          <p className="FooterText">© Copyright 2019 Poly Praise AZ </p>
       </div>
     </div>
   );

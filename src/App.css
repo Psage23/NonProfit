@@ -28,6 +28,10 @@
     cursor: pointer;
 }
 
+.NavBtns span {
+    font-size: 2rem;
+}
+
 .NavContainer {
     display: flex;
 }
@@ -37,6 +41,10 @@
 }
 
 .Gallery {
+    margin: 2%;
+}
+
+.GalleryCarousel {
     margin: 2%;
 }
 
