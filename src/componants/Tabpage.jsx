@@ -18,28 +18,26 @@ const TabPage = (props) => {
           <NavItem>
             <div className="NavBtns">
           <NavLink className={classnames({ active: activeTab === '1' })}
-            onClick={() => { toggle('1'); }}><span>☖</span>Home</NavLink></div>
+            onClick={() => { toggle('1'); }}><span>☖</span><br></br>Home</NavLink></div>
         </NavItem>
         <NavItem>
         <div className="NavBtns">
           <NavLink
             className={classnames({ active: activeTab === '2' })}
-            onClick={() => { toggle('2'); }}><span>☑</span> Photo Gallery
-          </NavLink></div>
+            onClick={() => { toggle('2'); }}><span>❒</span><br></br>Photo Gallery</NavLink></div>
         </NavItem>
         <NavItem>
         <div className="NavBtns">
           <NavLink
             className={classnames({ active: activeTab === '3' })}
             onClick={() => { toggle('3'); }}
-          > <span>☏</span>Contact Us
-          </NavLink></div>
+          > <span>☏</span><br></br>Contact Us</NavLink></div>
         </NavItem>
         <NavItem>
         <div className="NavBtns">
           <NavLink
             className={classnames({ active: activeTab === '4' })}
-            onClick={() => { toggle('4'); }}><span>☺</span>Donate</NavLink></div>
+            onClick={() => { toggle('4'); }}><span>☺</span><br></br>Donate</NavLink></div>
         </NavItem>
          </Nav>
          </div>

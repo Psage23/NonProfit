@@ -26,14 +26,11 @@
 
 .NavBtns {
     cursor: pointer;
+    text-align: center;
 }
 
 .NavBtns span {
     font-size: 2rem;
-}
-
-.NavContainer {
-    display: flex;
 }
 
 .Home {
@@ -55,6 +52,10 @@
 
 .Donate {
     margin: 2%;
+}
+
+Footer {
+    margin: 2% 0;
 }
 
 .FooterText {
