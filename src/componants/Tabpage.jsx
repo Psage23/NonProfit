@@ -52,13 +52,21 @@ const TabPage = (props) => {
             </Col>
           </Row>
           <Row>
-              <Col sm="12">
-          <PhotoGallery/>
-          </Col>
+            <Col sm="12">
+{   
+                //edit Gallery.jsx to add photo content}
+}
+                <PhotoGallery/>
+            </Col>
           </Row>
         </TabPane>
         <TabPane tabId="3">
+        <div className="Contact">
+{   
+                //edit ContactPage.jsx to modify form content}
+}
         <ContactPage/>
+        </div>
         </TabPane>
         <TabPane tabId="4">
           <Row>
