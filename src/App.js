@@ -8,10 +8,10 @@ function App() {
         <
         header className = "App-header" >
         <
-        /header> <body > <
-        TabPage / >
+        div className = "LogoText" > Poly Praise AZ < /div> <
+        /header> <div className="App-Body"> <TabPage/ >
         <
-        /body> </div >
+        /div> </div >
     );
 }
 

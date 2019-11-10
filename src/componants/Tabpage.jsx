@@ -12,40 +12,49 @@ const TabPage = (props) => {
   }
 
   return (
-    <div>
+    <div className="TabContainer">
+      <div className="NavContainer">
       <Nav tabs>
-        <NavItem>
+          <NavItem>
+            <div className="NavBtns">
           <NavLink className={classnames({ active: activeTab === '1' })}
-            onClick={() => { toggle('1'); }}>Home</NavLink>
+            onClick={() => { toggle('1'); }}>Home</NavLink></div>
         </NavItem>
         <NavItem>
+        <div className="NavBtns">
           <NavLink
             className={classnames({ active: activeTab === '2' })}
             onClick={() => { toggle('2'); }}> Photo Gallery
-          </NavLink>
+          </NavLink></div>
         </NavItem>
         <NavItem>
+        <div className="NavBtns">
           <NavLink
             className={classnames({ active: activeTab === '3' })}
             onClick={() => { toggle('3'); }}
           > Contact Us
-          </NavLink>
+          </NavLink></div>
         </NavItem>
         <NavItem>
+        <div className="NavBtns">
           <NavLink
             className={classnames({ active: activeTab === '4' })}
-            onClick={() => { toggle('4'); }}> Donate</NavLink>
+            onClick={() => { toggle('4'); }}> Donate</NavLink></div>
         </NavItem>
-      </Nav>
+         </Nav>
+         </div>
       <TabContent activeTab={activeTab}>
         <TabPane tabId="1">
+            <div className="Home">
           <Row>
             <Col sm="12">
               <h4>Home Page</h4>
             </Col>
           </Row>
+          </div>
         </TabPane>
         <TabPane tabId="2">
+        <div className="Gallery">
         <Row>
             <Col sm="12">
               <h4>Photo Gallery</h4>
@@ -59,6 +68,7 @@ const TabPage = (props) => {
                 <PhotoGallery/>
             </Col>
           </Row>
+          </div>
         </TabPane>
         <TabPane tabId="3">
         <div className="Contact">
@@ -69,13 +79,18 @@ const TabPage = (props) => {
         </div>
         </TabPane>
         <TabPane tabId="4">
+            <div className="Donate">
           <Row>
             <Col sm="12">
               <h4>Donate</h4>
             </Col>
           </Row>
+          </div>
         </TabPane>
       </TabContent>
+      <div className="PageFooter">
+          <p className="FooterText">Copyright 2019 Poly Praise AZ </p>
+      </div>
     </div>
   );
 }
