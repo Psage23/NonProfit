@@ -6,7 +6,7 @@ import {
   CarouselIndicators,
   CarouselCaption
 } from 'reactstrap';
-import Cardinals from '../../images';
+import Cardinals from '../../images/cardinals.jpg';
 
 const items = [ 
 
