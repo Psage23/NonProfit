@@ -14,6 +14,25 @@
     color: black;
 }
 
+.sponsor_content {
+    background-color: gray;
+ 
+    color: white;
+}
+
+.Sponsor {
+    margin: 2%;
+}
+
+.SponsorCarousel {
+    margin: 2%;
+}
+
+.SponsorCarousel img {
+    width: auto;
+    height: 500px;
+}
+
 .LogoText {
     text-align: left;
     padding: 2%;
@@ -41,9 +60,7 @@
     margin: 2%;
 }
 
-.GalleryCarousel {
-    margin: 2%;
-}
+
 
 .Contact {
     height: 100%;

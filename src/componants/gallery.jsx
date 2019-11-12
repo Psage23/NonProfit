@@ -1,77 +1,50 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
-  Carousel,
-  CarouselItem,
-  CarouselControl,
-  CarouselIndicators,
-  CarouselCaption
+  Card, CardImg, CardText, CardBody,
+  CardTitle, CardSubtitle, Button
 } from 'reactstrap';
-import Cardinals from '../../images/cardinals.jpg';
-
-const items = [ 
-
-  {
-    src: Cardinals,
-    caption: 'Arizona Cardinals'
-  },
-  {
-    src: 'panera.jpg',
-    caption: 'Panera Bread'
-  },
-  {
-    src: 'suns.png',
-    caption: 'Phoenix Suns'
-  }
-];
 
 const PhotoGallery = (props) => {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [animating, setAnimating] = useState(false);
-
-  const next = () => {
-    if (animating) return;
-    const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
-    setActiveIndex(nextIndex);
-  }
-
-  const previous = () => {
-    if (animating) return;
-    const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
-    setActiveIndex(nextIndex);
-  }
-
-  const goToIndex = (newIndex) => {
-    if (animating) return;
-    setActiveIndex(newIndex);
-  }
-
-  const slides = items.map((item) => {
-    return (
-      <CarouselItem
-        onExiting={() => setAnimating(true)}
-        onExited={() => setAnimating(false)}
-        key={item.src}
-      >
-        <img src={item.src} alt={item.altText} />
-        <CarouselCaption  captionHeader={item.caption} />
-      </CarouselItem>
-    );
-  });
-
   return (
-      <div className="GalleryCarousel">
-    <Carousel
-      activeIndex={activeIndex}
-      next={next}
-      previous={previous}
-    >
-      <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
-      {slides}
-      <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
-      <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
-    </Carousel>
+    <div className="Gallery">
+      <Card className="card1">
+        <CardImg top width="100%" src="/assets/318x180.svg" alt="Card image cap" />
+        <CardBody>
+          <CardTitle>Card title</CardTitle>
+          <CardSubtitle>Card subtitle</CardSubtitle>
+          <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+          <Button>Button</Button>
+        </CardBody>
+      </Card>
+      <Card>
+        <CardImg top width="100%" src="/assets/318x180.svg" alt="Card image cap" />
+        <CardBody>
+          <CardTitle>Card title</CardTitle>
+          <CardSubtitle>Card subtitle</CardSubtitle>
+          <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+          <Button>Button</Button>
+        </CardBody>
+      </Card>
+      <Card>
+        <CardImg top width="100%" src="/assets/318x180.svg" alt="Card image cap" />
+        <CardBody>
+          <CardTitle>Card title</CardTitle>
+          <CardSubtitle>Card subtitle</CardSubtitle>
+          <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+          <Button>Button</Button>
+        </CardBody>
+      </Card>
+      <Card>
+        <CardImg top width="100%" src="/assets/318x180.svg" alt="Card image cap" />
+        <CardBody>
+          <CardTitle>Card title</CardTitle>
+          <CardSubtitle>Card subtitle</CardSubtitle>
+          <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+          <Button>Button</Button>
+        </CardBody>
+      </Card>
     </div>
   );
-}
+};
 
 export default PhotoGallery;

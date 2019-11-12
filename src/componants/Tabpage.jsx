@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { TabContent, TabPane, Nav, NavItem, NavLink, Row, Col } from 'reactstrap';
 import classnames from 'classnames';
-import PhotoGallery from "./gallery"
-import ContactPage from "./ContactPage"
+import PhotoGallery from "./gallery";
+import ContactPage from "./ContactPage";
 
 const TabPage = (props) => {
   const [activeTab, setActiveTab] = useState('1');
