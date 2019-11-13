@@ -86,9 +86,6 @@ const TabPage = (props) => {
           </div>
         </TabPane>
       </TabContent>
-      <div className="PageFooter">
-          <p className="FooterText">© Copyright 2019 Poly Praise AZ </p>
-      </div>
     </div>
   );
 }

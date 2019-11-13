@@ -15,7 +15,7 @@ const items = [
     altText: 'Arizona Cardinals logo'
   },
   {
-    src: './sponsorsLogo/images/panera.jpg',
+    src: './sponsorsLogo/panera.jpg',
     altText: 'Panera Bread logo'
   },
   {
